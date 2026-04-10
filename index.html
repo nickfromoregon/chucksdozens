@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck's Dozens</title>
+    <style>
+        /* Load the True North Fonts */
+        @font-face {
+            font-family: 'True North Inline';
+            src: url('TrueNorthInline-Regular.ttf') format('truetype'),
+                 url('TrueNorthInline-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'True North Black';
+            src: url('TrueNorth-Black.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'True North Script';
+            src: url('True North Script.otf') format('opentype');
+        }
+
+        /* Apply the Inline font to the whole page by default */
+        body {
+            font-family: 'True North Inline', sans-serif; 
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        /* Basic Layout structure */
+        header {
+            padding: 2rem;
+            background-color: #ffffff;
+            border-bottom: 2px solid #eaeaea;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            padding: 3rem 2rem;
+            background-color: #ffffff;
+            border-top: 2px solid #eaeaea;
+        }
+
+        /* Contact Form Layout */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        input, textarea, button {
+            padding: 1rem;
+            font-family: 'True North Inline', sans-serif;
+            font-size: 1.1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="chuck’s chicken eggs.svg" alt="Chuck's Dozens Logo" style="max-width: 300px;">
+    </header>
+
+    <main>
+        <img src="your-eggsplainer-image.jpg" alt="Chuck's Dozens Eggsplainer">
+    </main>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </footer>
+
+</body>
+</html>
